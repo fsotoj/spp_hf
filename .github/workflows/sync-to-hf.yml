@@ -17,5 +17,5 @@ jobs:
         env:
           SPP_TOKEN: ${{ secrets.SPP_TOKEN }}
         run: |
-          git remote add hf https://<fsotoj>:$SPP_TOKEN@huggingface.co/spaces/fsotoj/spp_v3
+          git remote add hf https://fsotoj:$SPP_TOKEN@huggingface.co/spaces/fsotoj/spp_v3
           git push --force hf main
