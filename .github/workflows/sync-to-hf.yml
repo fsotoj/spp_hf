@@ -1,0 +1,21 @@
+name: Sync to Hugging Face hub
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hugging Face Space
+        env:
+          SPP_TOKEN: ${{ secrets.SPP_TOKEN }}
+        run: |
+          git remote add hf https://<fsotoj>:$SPP_TOKEN@huggingface.co/spaces/fsotoj/spp_v3
+          git push --force hf main
