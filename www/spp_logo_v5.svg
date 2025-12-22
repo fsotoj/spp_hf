@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="850"
+   height="300"
+   viewBox="0 0 850 300"
+   role="img"
+   aria-label="SPP | Subnational Politics Project"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="spp_logo_v5.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5376471"
+     inkscape:cx="425"
+     inkscape:cy="149.90436"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+    .brand { font-family: &quot;Montserrat&quot;, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 1px; }
+    .wordmark { font-family: &quot;Gill Sans MT&quot;, &quot;Gill Sans&quot;, Calibri, sans-serif; font-weight: 300; letter-spacing: 6px; }
+  </style>
+  </defs>
+  <!-- Left: SPP -->
+  <path
+     style="font-weight:900;font-size:190px;font-family:Montserrat, Arial, Helvetica, sans-serif;letter-spacing:1px;fill:#ffa92a"
+     d="M 26.586914,165.00488 66.572266,162.5 q 1.298828,9.74121 5.288086,14.84375 6.49414,8.25684 18.554687,8.25684 8.999023,0 13.823241,-4.17481 4.91699,-4.26758 4.91699,-9.83398 0,-5.28809 -4.63867,-9.46289 -4.63867,-4.17481 -21.523436,-7.88575 -27.646484,-6.21582 -39.428711,-16.51367 -11.875,-10.29785 -11.875,-26.25488 0,-10.4834 6.030274,-19.760743 6.123046,-9.370117 18.276367,-14.658203 12.246093,-5.380859 33.491211,-5.380859 26.069335,0 39.707035,9.741211 13.73046,9.648437 16.32812,30.800784 l -39.61426,2.31933 q -1.57715,-9.18457 -6.679684,-13.35937 -5.009766,-4.174807 -13.916016,-4.174807 -7.329102,0 -11.040039,3.154297 -3.710938,3.06152 -3.710938,7.51465 0,3.24707 3.061524,5.84473 2.96875,2.69042 14.101562,5.00976 27.553711,5.9375 39.428711,12.06055 11.96777,6.03027 17.34863,15.02929 5.47364,8.99903 5.47364,20.13184 0,13.08105 -7.23633,24.12109 -7.23633,11.04004 -20.22461,16.792 -12.98828,5.65918 -32.749025,5.65918 -34.697266,0 -48.056641,-13.35938 -13.359375,-13.35937 -15.12207,-33.95508 z"
+     id="brandText" />
+  <!-- Fill the P counters (approximate positions) -->
+  <!-- First P counter -->
+  <path
+     d="M 171.94141,73.994141 V 210 h 42.21289 v -50.46875 h 23.00781 c 16.94661,0 29.53385,-3.86654 37.75976,-11.59766 8.28776,-7.73112 12.43165,-18.46094 12.43165,-32.1914 0,-13.35938 -3.80469,-23.656253 -11.41211,-30.892581 -7.54558,-7.236328 -18.92578,-10.855468 -34.14063,-10.855468 z"
+     style="fill:#ffa92a"
+     id="path8" />
+  <!-- Second P counter -->
+  <path
+     d="M 310.1543,73.994141 V 210 h 42.21093 v -50.46875 h 23.00782 c 16.94662,0 29.53386,-3.86654 37.75976,-11.59766 8.28776,-7.73112 12.43164,-18.46094 12.43164,-32.1914 0,-13.35938 -3.80469,-23.656253 -11.41211,-30.892581 -7.54557,-7.236328 -18.92383,-10.855468 -34.13867,-10.855468 z"
+     style="fill:#ffa92a"
+     id="path11" />
+  <!-- Separator moved to the right of second P -->
+  <line
+     x1="450"
+     y1="75"
+     x2="450"
+     y2="210"
+     stroke="#4D4D4D"
+     stroke-width="4"
+     id="line2" />
+  <!-- Right: stacked words -->
+  <text
+     x="470"
+     y="100"
+     class="wordmark"
+     font-size="40"
+     fill="#4D4D4D"
+     id="text2">SUBNATIONAL</text>
+  <text
+     x="470"
+     y="150"
+     class="wordmark"
+     font-size="40"
+     fill="#4D4D4D"
+     id="text3">POLITICS</text>
+  <text
+     x="470"
+     y="200"
+     class="wordmark"
+     font-size="40"
+     fill="#4D4D4D"
+     id="text4">PROJECT</text>
+</svg>

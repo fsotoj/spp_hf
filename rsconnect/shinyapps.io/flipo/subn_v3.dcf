@@ -1,0 +1,12 @@
+name: subn_v3
+title: subn_v3
+username: flipo
+account: flipo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14732464
+bundleId: 11147198
+url: https://flipo.shinyapps.io/subn_v3/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

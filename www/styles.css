@@ -1,0 +1,1171 @@
+/* =========================================================
+   0) PROJECT PALETTE (CSS VARIABLES)
+   ========================================================= */
+:root {
+  --gray:   #4D4D4D;   /* neutral dark for text */
+  --magenta:#E5007D;   /* accent / interactive */
+  --purple: #722464;   /* now secondary */
+  --orange: #FFA92A;   /* now primary */
+
+  --bg-light: #ffffff; /* main background */
+  --bg-muted: #f9f9f9; /* panels, sections */
+
+  --text-dark: #111111;
+  --text-light: #f0f0f0;
+
+  --shadow-200: 0 4px 8px rgba(0,0,0,0.15);
+  --focus-ring: 0 0 0 1px rgba(255, 169, 42, 0.45); /* orange glow */
+}
+
+
+
+/* =========================================================
+GENERAL LABELS
+========================================================= */
+label, .control-label, .shiny-input-container label, .form-group label {
+color: var(--gray) !important;
+}
+
+
+/* =========================================================
+   1) FUNDAMENTOS / LAYOUT GLOBAL
+   ========================================================= */
+body, .content-wrapper, .right-side {
+  background-color: var(--bg-light) !important;
+  color: var(--text-dark) !important;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--gray) !important; }
+
+.main-footer {
+  background-color: var(--bg-muted) !important;
+  color: var(--gray) !important;
+  border-top: 1px solid var(--orange) !important;
+}
+
+a, .link { color: var(--orange); }
+a:hover, a:focus {
+  color: var(--purple);
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* =========================================================
+   2) NAVBAR / MAIN-HEADER
+   ========================================================= */
+
+
+
+.skin-blue .main-header,
+.skin-blue .main-header .logo {
+  background-color: #fff !important;
+  color: #111 !important;
+}
+
+.skin-blue .main-header .navbar { background-color: var(--orange) !important; background-image: url('background.svg');}
+.skin-blue .main-header .navbar .nav > li > a { color: #111 !important; }
+
+.skin-blue .main-header .navbar .nav > li > a:hover,
+.skin-blue .main-header .navbar .nav > li > a:focus {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+/* Sidebar */
+.skin-blue .main-sidebar {
+  background-color: var(--bg-muted) !important;
+  color: var(--gray) !important;
+}
+.skin-blue .main-sidebar .sidebar a { color: var(--gray) !important; }
+.skin-blue .main-sidebar .sidebar a:hover {
+  background-color: var(--magenta) !important;
+  color: #111 !important;
+}
+.skin-blue .main-sidebar .sidebar-menu > li.active > a {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+/* =========================================================
+   3) BOXES / PANELS
+   ========================================================= */
+.box {
+  background-color: var(--bg-muted) !important;
+  color: var(--text-dark) !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--orange) !important;
+}
+
+.box.light-body-box > .box-body {
+  background-color: var(--bg-light) !important;
+  color: var(--text-dark) !important;
+}
+
+.box.box-danger { border-top-color: #ff3300 !important; }
+
+/* =========================================================
+   4) BOTONES & CONTROLES
+   ========================================================= */
+.btn { border: none !important; }
+
+/* Default -> orange primary */
+.btn-default {
+  background-color: var(--orange) !important;
+  color: #111 !important;
+}
+
+/* Secondary -> purple */
+.btn-secondary,
+.btn-outline,
+.btn-flat {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+/* Play button style (slider animate, restored) */
+.slider-animate-button {
+  position: relative;
+  top: 15px;
+  font-size: 14px;
+  background-color: var(--orange) !important;
+  color: #111 !important;
+  border: none !important;
+  border-radius: 6px;
+  width: 70px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: 0.8; 
+}
+
+.slider-animate-button .btn-text { 
+  margin-left: 8px; 
+  font-size: 14px; 
+  user-select: none; 
+}
+
+.slider-animate-button:hover { background-color: var(--purple) !important; color: #fff !important; }
+
+
+
+/* =========================================================
+   5) MODALES
+   ========================================================= */
+.modal-content {
+  background-color: var(--bg-light) !important;
+  color: var(--text-dark) !important;
+  /*border: 1px solid var(--orange) !important;*/
+  border-radius: 8px;
+  box-shadow: var(--shadow-200);
+}
+
+.modal-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: var(--orange) !important;
+  color: #111 !important;
+}
+.modal-footer .btn {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+
+/* =========================================================
+   7) LOGO STYLE
+   ========================================================= */
+.skin-blue .main-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding-left: 0px;
+}
+
+.skin-blue .main-header .logo img {
+  max-height: 70px;
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  padding: 0px 0px;
+}
+
+.skin-blue .main-header .logo #sidebar-toggle-relocated {
+  float: none;
+  background: #ffffff !important;
+  color: #111 !important;
+  padding: 14px 15px;
+  border-radius: 0px;
+  line-height: 2;
+  order: -1;
+}
+
+.skin-blue .main-header .logo #sidebar-toggle-relocated:hover,
+.skin-blue .main-header .logo #sidebar-toggle-relocated:active{
+  background-color: var(--magenta) !important;
+  color: #fff !important;
+}
+
+.skin-blue .main-header .logo #sidebar-toggle-relocated:focus {
+  background-color: #ffffff !important;
+  color: #111 !important;
+}
+
+/* =========================================================
+   8) MODAL syles
+   ========================================================= */
+#aboutSPPModal .modal-header,
+#howToModal .modal-header {
+  background-color: var(--orange) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  min-height: 56px;
+  overflow: hidden;
+}
+
+#aboutSPPModal .modal-header .modal-title,
+#howToModal .modal-header .modal-title {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+#aboutSPPModal .modal-header .modal-title img,
+#howToModal .modal-header .modal-title img {
+  display: block;
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Warning-style header for development notice modal */
+#devNoticeModal .modal-header {
+  background-color: #d9534f !important; /* Bootstrap danger red */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding: 0px 16px;*/
+  min-height: 56px;
+  overflow: hidden;
+  border-bottom: 0px solid #b52b27;
+}
+
+/* ============================
+   CAUTION-STRIPE DEV NOTICE
+   ============================ */
+
+/* --- Modal container --- */
+#devNoticeModal .modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* --- Caution stripe header --- */
+#devNoticeModal .modal-header {
+  background: repeating-linear-gradient(
+    45deg,
+    #000 0,
+    #000 20px,
+    #f7d400 20px,
+    #f7d400 40px
+  );
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+
+/* Title container */
+#devNoticeModal .modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+/* Invert your logo to match */
+#devNoticeModal .modal-title img {
+  max-height: 60px;
+  filter: brightness(0) invert(1);
+}
+
+/* --- Body with “glossy” dark warning panel --- */
+#devNoticeModal .modal-body {
+  background: linear-gradient(to bottom, #1a1a1a 0%, #111 100%);
+  color: #f7d400;
+  padding: 24px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-top: 4px solid rgba(255,255,255,0.07);
+}
+
+/* --- Caution stripe footer (to echo the top) --- */
+#devNoticeModal .modal-footer {
+  background: repeating-linear-gradient(
+    45deg,
+    #000 0,
+    #000 20px,
+    #f7d400 20px,
+    #f7d400 40px
+  );
+  border-top: none;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer button */
+#devNoticeModal .modal-footer .btn {
+  background: #f7d400 !important;   /* strong yellow */
+  color: #000 !important;           /* black text */
+  border: 2px solid #000 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#devNoticeModal .modal-footer .btn:hover {
+  background: #ffea55 !important;
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+
+#devNoticeModal .modal-dialog {
+  display: flex !important;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   9) SELECTIZE INPUTS
+   ========================================================= */
+.selectize-input {
+  border: 1px solid var(--gray) !important;
+  border-radius: 6px;
+  background-color: #fff !important;
+  color: var(--text-dark) !important;
+  transition: all 0.2s ease;
+}
+
+.selectize-input:hover {
+  border-color: var(--orange) !important;
+  box-shadow: 0 0 0 2px rgba(255,169,42,0.25);
+}
+
+.selectize-input .focus {
+  border-color: var(--purple) !important;
+  box-shadow: 0 0 0 2px rgba(114,36,100,0.25);
+}
+
+.selectize-dropdown .option:hover,
+.selectize-dropdown .option.active {
+  background-color: rgba(255,169,42,0.15) !important;
+  color: var(--text-dark) !important;
+}
+
+.selectize-dropdown .option.selected {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+
+/* =========================================================
+   12) RESPONSIVE ADAPTATION (<=1200px width OR <=600px height)
+   ========================================================= */
+
+
+@media (max-width: 1200px), (max-height: 800px) {
+  body {
+    zoom: 0.90; /* 85% size for moderate screens */
+  }
+}
+
+@media (max-width: 1117px), (max-height: 500px) {
+  body {
+    zoom: 0.75; /* 75% for very small laptops */
+  }
+}
+
+
+
+@media (max-width: 1200px) , (max-height: 800px) {
+  #year_selector{
+    position: fixed !important;    /* fixed relative to viewport, not container */
+    bottom: 25px !important;       /* always stick to bottom */
+    left: 35% !important;          /* center horizontally */
+    right: 15% !important;          /* center horizontally */
+    /*transform: translateX(-50%) scale(0.9);  /* slight shrink + center alignment */
+    z-index: 2000 !important;
+  }
+
+  
+}
+
+
+/* =========================================================
+   15) SIDEBAR ADJUSTS HEIGHT WHEN SCREEN SHRINKS
+   ========================================================= */
+
+@media (max-width: 1200px), (max-height: 800px) {
+
+  /* Let the sidebar grow taller as the screen shrinks */
+  .main-sidebar {
+    min-height: 100vh !important;     /* ensure full viewport height */
+    height: calc(100vh + 33vh) !important; /* slightly taller on small screens */
+    overflow-y: auto !important;      /* scroll if content exceeds viewport */
+  }
+
+  /* Make sure content wrapper matches */
+  .content-wrapper, .right-side {
+    min-height: calc(100vh + 33vh) !important;
+  }
+
+
+}
+
+
+/* =========================================================
+   20) PORTRAIT MODE — EXPAND YEAR SELECTOR AND DOWNLOAD BUTTON
+   ========================================================= */
+
+/* General layout for portrait orientation */
+@media screen and (orientation: portrait) {
+
+  /* Let the year selector stretch wider across the bottom */
+  #year_selector{
+    /*position: fixed !important;    /* fixed relative to viewport, not container */
+    bottom: 25px !important;       /* always stick to bottom */
+    left: 5% !important;          /* center horizontally */
+    right: 15% !important;          /* center horizontally */
+    /*transform: translateX(-50%) scale(0.9);  /* slight shrink + center alignment */
+    z-index: 2000 !important;
+  }
+
+  
+}
+
+
+/* =========================================================
+   21F) CLEAN TWO-LINE, GROUPED LEGEND FOR PORTRAIT
+   ========================================================= */
+@media screen and (orientation: portrait) and (max-width: 600px){
+
+  .info.legend.leaflet-control {
+    position: fixed !important;
+    bottom: 150px !important;               /* stays above the year selector */
+    left: 25% !important;
+    transform: translateX(-50%) !important;
+    width: 80vw !important;
+    max-width: 200px !important;
+    text-align: left !important;
+    background-color: rgba(255,255,255,0.95) !important;
+    padding: 8px 12px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    z-index: 2100 !important;
+
+    /* New scrolling behavior */
+    max-height: 20vh !important;            /* limit height to 40% of viewport */
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;      /* smooth iOS scrolling */
+
+    /* Optional: visual cue for scrollable area */
+    scrollbar-width: thin;                  /* for Firefox */
+    scrollbar-color: rgba(0,0,0,0.4) rgba(255,255,255,0.2);
+  }
+
+  /* Scrollbar style for WebKit browsers */
+  .info.legend.leaflet-control::-webkit-scrollbar {
+    width: 8px;
+  }
+  .info.legend.leaflet-control::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.35);
+    border-radius: 4px;
+  }
+  .info.legend.leaflet-control::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.5);
+  }
+
+  .info.legend.leaflet-control i {
+    vertical-align: middle !important;
+    margin-right: 6px !important;
+  }
+
+  .info.legend.leaflet-control strong {
+    display: block !important;
+    text-align: left !important;
+    margin-bottom: 6px !important;
+  }
+  
+  
+    #var-desc-map {
+    position: fixed !important;
+    bottom: 160px !important;
+    left: calc(25% + 125px) !important; ;
+    width: 65vw !important;                 /* same width as legend */
+    
+  }
+}
+
+
+
+/* === Responsive header: icons only on small screens or portrait ========== */
+
+/* Hide the text (not the icons) when screen is narrow or in portrait mode */
+/*@media (max-width: 992px), (orientation: portrait) {*/
+@media (orientation: portrait) {
+  .main-header .navbar .navbar-custom-menu .header-tab a {
+    padding: 10px; /* shrink padding a bit */
+  }
+
+  /* Hide the text labels but keep icons visible */
+  .main-header .navbar .navbar-custom-menu .header-tab a {
+    font-size: 0; /* hides text but not icons */
+  }
+
+  .main-header .navbar .navbar-custom-menu .header-tab a i {
+    font-size: 18px; /* restore icon size */
+    margin-right: 0; /* remove gap */
+  }
+
+  /* Optional: hide text in contact link too */
+  #contact-email span {
+    display: none;
+  }
+
+  #contact-email i {
+    font-size: 18px;
+  }
+  
+
+}
+
+/* Restore text labels for larger screens */
+@media (orientation: landscape) {
+  .main-header .navbar .navbar-custom-menu .header-tab a {
+    font-size: 14px;
+  }
+  .main-header .navbar .navbar-custom-menu .header-tab a i {
+    margin-right: 6px;
+  }
+  
+}
+
+
+
+
+/* =========================================================
+   16) SIDEBAR COLOR EXTENDS WITH SCROLLING CONTENT
+   ========================================================= */
+
+/* Force sidebar background to always fill page height */
+.main-sidebar {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--bg-muted) !important;
+  min-height: 100% !important;
+}
+
+/* Let the parent wrapper expand naturally */
+.wrapper {
+  min-height: 100% !important;
+}
+
+/* Make sure sidebar follows page height when content is taller */
+html, body {
+  background-color: var(--bg-muted) !important;
+  height: auto !important;
+  min-height: 100% !important;
+}
+
+/* Optional: for extremely long pages, make sidebar stretch dynamically */
+body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*width: 390px; /* your sidebar width, adjust if responsive */
+  height: 100%;
+  background-color: var(--bg-muted);
+  z-index: -1; /* behind all other elements */
+}
+
+
+
+/* =========================================================
+   17) YEAR SELECTOR RESPONSIVE TO SIDEBAR STATE
+   ========================================================= */
+
+
+/* When the sidebar is collapsed or hidden */
+body.sidebar-collapse #year_selector {
+  left: 20% !important;   /* move closer to left edge */
+  /*right: 10%;              /* allow more space on the right */
+  /*max-width: 90vw;         /* expand width dynamically */
+}
+
+
+
+
+/* =========================================================
+   21D) GLOBAL LEAFLET LEGEND RESPONSIVE STYLING
+   ========================================================= */
+
+/* Default (desktop / landscape) */
+.leaflet-control {
+  max-width: 25vw !important;
+}
+
+.leaflet-control .leaflet-control-legend {
+  max-width: 100% !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.leaflet-control .leaflet-control-legend div {
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+
+
+
+/* =========================================================
+   21F) STYLING FOR THE SCREENSHOT BUTTON
+   ========================================================= */
+   
+/* Hide the small default export icon */
+.leaflet-control-easyPrint-button-export {
+  display: none !important;
+}
+
+
+
+#custom-easyprint-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+
+
+/* Make sure the container is visible */
+.easyPrintHolder {
+  display: block !important;
+  position: relative !important;
+  margin-left: 0 !important;        /* no internal offset */
+
+}
+
+/* --- FIX ROTATION --- */
+/* Leaflet toolbars often use rotate(90deg) for vertical stacking — reset that */
+.leaflet-control-easyPrint.leaflet-bar {
+  transform: none !important;
+  writing-mode: horizontal-tb !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+
+
+/* --- STYLE THE BUTTON --- */
+.easyPrintHolder .A4Landscape.page {
+  
+  position: relative !important;
+  top: 28px !important;
+  font-size: 14px; 
+  
+  font-weight: bold;
+  background-color: var(--orange) !important;
+  color: #111 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  /*padding: 0 30px !important;*/
+  cursor: pointer !important;
+  text-align: center !important;
+  
+
+  /* fixes the weird vertical square */
+  height: auto !important;
+  line-height: 1.5 !important;
+  background-image: none !important;
+  background-size: unset !important;
+  background-repeat: no-repeat !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: none !important;
+  width: 120px; 
+  opacity: 0.8; 
+  box-sizing: border-box; 
+  
+}
+
+/* Replace the icon with plain text */
+.easyPrintHolder .A4Landscape.page::before {
+  content: "\f030";  /* camera */
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Solid", "Font Awesome";
+  margin-right: 6px;
+}
+
+.easyPrintHolder .A4Landscape.page::after {
+  content: "Screenshot";
+  font-family: sans-serif;      /* regular font */
+}
+
+/* Hover effect */
+.easyPrintHolder .A4Landscape.page:hover {
+background-color: var(--purple) !important; color: #fff !important;
+
+}
+
+.slider-animate-container {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 5px !important;
+  justify-content: flex-start !important;
+ 
+}
+
+
+/* Oculta los mapas clonados que leaflet-easyPrint crea temporalmente */
+.epHolder {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+
+
+
+@media (orientation: portrait) {.easyPrintHolder {display: none !important;}}
+
+
+
+
+
+/* =========================================================
+   21F) HEADER TABS
+   ========================================================= */
+.main-header .navbar .nav > li.tec-logo > a {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.main-header .navbar .nav > li.tec-logo img {
+  margin-top: 5px; /* tweak or remove if not needed */
+  margin-bottom: 5px;
+}
+
+
+.main-header .navbar .navbar-custom-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* 2️⃣ Turn the inner <ul> into a flexbox container */
+.main-header .navbar .navbar-custom-menu > .nav.navbar-nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between; /* left group | right group */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 4️⃣ TEC logo goes to the far right */
+.main-header .navbar .navbar-custom-menu .tec-logo {
+  order: 2;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* === Responsive TEC logo behavior ====================================== */
+
+/* Hide the "title" TEC logo by default */
+.tec-logo-title {
+  display: none;
+}
+
+/* Show the right-corner TEC logo normally */
+.main-header .navbar .navbar-custom-menu .tec-logo {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* ------------- Portrait or small screens ------------- */
+/*@media (orientation: portrait), (max-width: 992px) {*/
+@media (orientation: portrait) and (max-width: 600px) {  
+  /* Hide the right-corner TEC logo */
+  .main-header .navbar .navbar-custom-menu .tec-logo {
+    display: none !important;
+  }
+
+  /* Show the small TEC logo next to the main title */
+  .tec-logo-title {
+    display: inline-block !important;
+  }
+
+  /* Optionally shrink it a bit */
+  .tec-logo-title img {
+    height: 40px !important;
+    vertical-align: middle;
+    padding: 0px 0px;
+  }
+
+  /* Add a bit of spacing between SPP and TEC logos */
+  .app-header-logo {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between; /* Push logos apart */
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .skin-blue .main-header .logo img {
+  padding: 0px 0px;
+  }
+  
+
+}
+
+
+
+
+/* -------------- HOW TO BUTTON ----------- */
+
+/*.sidebar-howto-container {
+/*  display: flex;
+/*  justify-content: center;    /* centers horizontally */
+/*  padding: 15px 0;            /* top/bottom spacing */
+/*  width: 100%;
+/*}
+/*
+/*
+/*.btn-howto {
+/*  background: var(--orange);
+/*  color: white !important;
+/*  border: none;
+/*  border-radius: 8px;
+/*  font-weight: 600;
+/*  text-transform: uppercase;
+/*  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+/*  transition: all 0.2s ease-in-out;
+/*}
+/*
+/*.btn-howto:hover, .btn-howto:focus {
+/*  background: var(--purple);
+/*  transform: scale(1.03);
+/*  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+/*}
+/*
+/*.sidebar-howto-container {
+/*  text-align: center;        /* centers the inline button */
+/*  padding: 10px 0 15px 0;    /* top/bottom spacing */
+/*}
+
+
+
+
+
+/* =========================================================
+   FANCYTREE 
+   ========================================================= */
+/* ✅ Allow title wrapping */
+#fancytree_vars_demo span.fancytree-title,
+#fancytree_vars_demo_graph span.fancytree-title,
+#fancytree_states_demo span.fancytree-title {
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  display: inline-block !important;
+  line-height: 1.25em;
+  max-width: 95%;
+  padding: 2px 3px;
+}
+
+/* ✅ Keep icons aligned when text wraps */
+#fancytree_vars_demo span.fancytree-node,
+#fancytree_vars_demo_graph span.fancytree-node,
+#fancytree_states_demo span.fancytree-node {
+  vertical-align: top;
+}
+
+/* ✅ Let rows grow with content */
+#fancytree_vars_demo .fancytree-node,
+#fancytree_vars_demo_graph .fancytree-node,
+#fancytree_states_demo .fancytree-node {
+  min-height: 20px;
+  background: transparent !important;
+}
+
+/* ✅ Expand inner container */
+#fancytree_vars_demo .fancytree-container,
+#fancytree_vars_demo_graph .fancytree-container,
+#fancytree_states_demo .fancytree-container {
+  width: 100% !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* ✅ Style the OUTER box (jsTree look) */
+#fancytree_vars_demo,
+#fancytree_vars_demo_graph,
+#fancytree_states_demo {
+  background: var(--bg-light);
+  border-radius: 5px;
+  box-shadow: var(--shadow-200);
+  padding: 5px;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  max-height: 200px;
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------------
+   Base neutralization (remove default fancytree styling)
+------------------------------------------------------- */
+#fancytree_vars_demo span.fancytree-node,
+#fancytree_vars_demo_graph span.fancytree-node,
+#fancytree_states_demo span.fancytree-node,
+#fancytree_vars_demo span.fancytree-title,
+#fancytree_vars_demo_graph span.fancytree-title,
+#fancytree_states_demo span.fancytree-title {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* -------------------------------------------------------
+   FULL-ROW HOVER (jsTree-like)
+------------------------------------------------------- */
+#fancytree_vars_demo span.fancytree-node:hover,
+#fancytree_vars_demo_graph span.fancytree-node:hover,
+#fancytree_states_demo span.fancytree-node:hover {
+  background-color: rgba(255,169,42,0.25) !important;
+  border-radius: 3px;
+}
+
+/* Remove inner title background */
+#fancytree_vars_demo span.fancytree-node:hover span.fancytree-title,
+#fancytree_vars_demo_graph span.fancytree-node:hover span.fancytree-title,
+#fancytree_states_demo span.fancytree-node:hover span.fancytree-title {
+  background: transparent !important;
+}
+
+/* -------------------------------------------------------
+   FULL-ROW SELECTED (active)
+------------------------------------------------------- */
+#fancytree_vars_demo span.fancytree-node.fancytree-active,
+#fancytree_vars_demo_graph span.fancytree-node.fancytree-active,
+#fancytree_states_demo span.fancytree-node.fancytree-active {
+  background-color: var(--purple) !important;
+  border-radius: 3px;
+}
+
+/* Selected text */
+#fancytree_vars_demo span.fancytree-node.fancytree-active span.fancytree-title,
+#fancytree_vars_demo_graph span.fancytree-node.fancytree-active span.fancytree-title,
+#fancytree_states_demo span.fancytree-node.fancytree-active span.fancytree-title {
+  color: #fff !important;
+  background: transparent !important;
+  outline: none;
+}
+
+
+/* -----------------------------------------------
+   STATES TREE: selected nodes keep the hover style
+   (because multiselect is allowed)
+------------------------------------------------ */
+
+/* Selected row uses same color as hover */
+#fancytree_states_demo span.fancytree-node.fancytree-selected {
+  background-color: rgba(255,169,42,0.25) !important;
+  border-radius: 3px;
+}
+
+/* Text stays normal (not white, not bold) */
+#fancytree_states_demo span.fancytree-node.fancytree-selected span.fancytree-title {
+  color: #000 !important;
+  font-weight: normal !important;
+}
+
+/* When hovered AND selected → same highlight, not purple */
+#fancytree_states_demo span.fancytree-node.fancytree-selected:hover {
+  background-color: rgba(255,169,42,0.35) !important; /* slightly stronger */
+}
+
+
+
+
+
+
+
+
+/* Keep logo + navbar in one line for landscape phones */
+@media (orientation: landscape) and (max-width: 799px) {
+  .main-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .main-header .logo {
+    float: none !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .main-header .navbar {
+    float: none !important;
+    width: auto !important;
+    flex: 1 1 auto !important;
+  }
+  .easyPrintHolder {display: none !important;}
+  
+  .outer {
+          top: -40px !important;
+        }
+  
+    #year_selector{
+    /*position: fixed !important;    /* fixed relative to viewport, not container */
+    bottom: 25px !important;       /* always stick to bottom */
+    left: 5% !important;          /* center horizontally */
+    right: 15% !important;          /* center horizontally */
+    /*transform: translateX(-50%) scale(0.9);  /* slight shrink + center alignment */
+    z-index: 2000 !important;
+  }
+}
+
+
+/* TABLET PORTRAIT = use the SAME single-row header as landscape */
+@media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
+
+
+
+  .main-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .main-header .logo {
+    float: none !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .main-header .navbar {
+    float: none !important;
+    width: auto !important;
+    flex: 1 1 auto !important;
+  }
+  .easyPrintHolder {display: none !important;}
+  
+
+  
+
+/* HEADER: logo + navbar should sit side-by-side cleanly */
+  .main-header {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+  }
+  
+  /* LOGO stays left, fixed size */
+  .main-header .logo {
+      flex: 0 0 auto !important;  /* do NOT grow */
+      display: flex !important;
+      align-items: center !important;
+  }
+  
+  /* NAVBAR takes the remaining available space */
+  .main-header .navbar {
+      flex: 1 1 auto !important;   /* grow to fill remaining width */
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+  
+      /* IMPORTANT: remove offsets WITHOUT pushing under logo */
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      width: auto !important;
+  }
+  
+  /* UL inside navbar distributes icons on the right */
+  .navbar-custom-menu .nav.navbar-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: flex-end !important;
+      align-items: center !important;
+  
+      margin: 0 !important;
+      padding: 0 !important;
+  }
+
+
+  body:not(.sidebar-collapse):not(.sidebar-open) #year_selector {
+    left: 27% !important;
+    right: 15% !important;
+  }
+
+
+}
+

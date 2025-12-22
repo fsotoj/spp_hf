@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="103mm"
+   viewBox="0 0 200 103"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="databases_spp.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.4378367"
+     inkscape:cx="408.2522"
+     inkscape:cy="184.6524"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999999"
+       spacingy="0.99999997"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 117.92172,16.339478 h -4.75271 v 14.008629 h 4.75271"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1" />
+    <path
+       d="m 108.40651,23.483228 h 4.75297"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path2" />
+    <path
+       d="m 65.534219,22.689478 h -4.752711 v 65.344939 h 4.752711"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path3" />
+    <path
+       d="m 56.019008,55.497811 h 4.752975"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path4" />
+    <path
+       d="m 60.781508,51.264478 h 4.752975"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path5" />
+    <path
+       d="m 60.781508,73.754061 h 4.752975"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path6" />
+    <path
+       d="m 117.92172,45.179061 h -4.75271 V 59.18769 h 4.75271"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7" />
+    <path
+       d="m 108.40651,52.058228 h 4.75297"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path8" />
+    <path
+       d="m 108.40651,73.489477 h 9.52367"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9" />
+    <path
+       d="m 108.40651,88.041561 h 9.52367"
+       stroke="#4e4d4d"
+       stroke-width="0.176389"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path10" />
+    <rect
+       x="118.85755"
+       y="81.294685"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       id="rect10"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text10"
+       x="122.75566"
+       y="85.263435"
+       style="stroke-width:0.264583">Capital</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text11"
+       x="136.76984"
+       y="85.263435"
+       style="stroke-width:0.264583">Federal</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text12"
+       x="151.57063"
+       y="85.263435"
+       style="stroke-width:0.264583">and</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text13"
+       x="159.34753"
+       y="85.263435"
+       style="stroke-width:0.264583">Tierra</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text14"
+       x="171.30855"
+       y="85.263435"
+       style="stroke-width:0.264583">del</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text15"
+       x="177.90726"
+       y="85.263435"
+       style="stroke-width:0.264583">Fuego</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text16"
+       x="125.27819"
+       y="90.555099"
+       style="stroke-width:0.264583">Legislatures</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text17"
+       x="149.85428"
+       y="90.555099"
+       style="stroke-width:0.264583">Database</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text18"
+       x="168.89211"
+       y="90.555099"
+       style="stroke-width:0.264583">(CFTDFLD)</text>
+    <rect
+       x="66.734634"
+       y="81.294685"
+       width="40.216667"
+       height="12.7"
+       fill="#f7a72f"
+       id="rect18"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text19"
+       x="72.124596"
+       y="88.75972"
+       style="stroke-width:0.264583">Additional</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text20"
+       x="92.450279"
+       y="88.75972"
+       style="stroke-width:0.264583">Data</text>
+    <rect
+       x="118.85755"
+       y="67.007187"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.8"
+       id="rect20"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text21"
+       x="123.40838"
+       y="74.104187"
+       style="stroke-width:0.264583">Subnational</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text22"
+       x="146.39009"
+       y="74.104187"
+       style="stroke-width:0.264583">Democracy</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text23"
+       x="168.42644"
+       y="74.104187"
+       style="stroke-width:0.264583">Index</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text24"
+       x="179.91095"
+       y="74.104187"
+       style="stroke-width:0.264583">(SDI)</text>
+    <rect
+       x="66.734634"
+       y="67.007187"
+       width="40.216667"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.898039"
+       id="rect24"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text25"
+       x="75.642357"
+       y="72.080025"
+       style="stroke-width:0.264583">Subnational</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text26"
+       x="70.579826"
+       y="76.267601"
+       style="stroke-width:0.264583">Democracy</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text27"
+       x="92.369316"
+       y="76.267601"
+       style="stroke-width:0.264583">Index</text>
+    <rect
+       x="118.85755"
+       y="52.719685"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.6"
+       id="rect27"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text28"
+       x="125.66607"
+       y="56.688435"
+       style="stroke-width:0.264583">Subnational Legislative Elections</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text29"
+       x="140.85316"
+       y="61.980103"
+       style="stroke-width:0.264583">Database (SLED)</text>
+    <rect
+       x="20.697134"
+       y="46.369686"
+       width="33.602081"
+       height="17.991667"
+       fill="#f7a72f"
+       id="rect29"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text30"
+       x="26.367155"
+       y="50.338436"
+       style="stroke-width:0.264583">Subnational</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text31"
+       x="30.372946"
+       y="55.630104"
+       style="stroke-width:0.264583">Politics</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text32"
+       x="24.971901"
+       y="60.921768"
+       style="stroke-width:0.264583">Project</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text33"
+       x="40.061989"
+       y="60.921768"
+       style="stroke-width:0.264583">(SPP)</text>
+    <rect
+       x="66.734634"
+       y="44.782185"
+       width="40.216667"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.6"
+       id="rect33"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text34"
+       x="73.772552"
+       y="51.879189"
+       style="stroke-width:0.264583">Electoral</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text35"
+       x="92.672531"
+       y="51.879189"
+       style="stroke-width:0.264583">Data</text>
+    <rect
+       x="118.85755"
+       y="38.432186"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.6"
+       id="rect35"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text36"
+       x="126.61857"
+       y="42.400936"
+       style="stroke-width:0.264583">Subnational Executive Elections</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text37"
+       x="140.72986"
+       y="47.692604"
+       style="stroke-width:0.264583">Database (SEED)</text>
+    <rect
+       x="118.85755"
+       y="24.144686"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.4"
+       id="rect37"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text38"
+       x="126.35399"
+       y="28.113436"
+       style="stroke-width:0.264583">Subnational</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text39"
+       x="149.10657"
+       y="28.113436"
+       style="stroke-width:0.264583">Executive</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text40"
+       x="168.34521"
+       y="28.113436"
+       style="stroke-width:0.264583">Database</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text41"
+       x="151.20737"
+       y="33.405102"
+       style="stroke-width:0.264583">(SED)</text>
+    <rect
+       x="66.734634"
+       y="16.736353"
+       width="40.216667"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.4"
+       id="rect41"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text42"
+       x="73.127625"
+       y="23.833355"
+       style="stroke-width:0.264583">Executive</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text43"
+       x="93.847939"
+       y="23.833355"
+       style="stroke-width:0.264583">Data</text>
+    <rect
+       x="118.85755"
+       y="9.5926037"
+       width="74.877083"
+       height="12.7"
+       fill="#f7a72f"
+       fill-opacity="0.4"
+       id="rect43"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text44"
+       x="128.78239"
+       y="15.033472"
+       style="stroke-width:0.264583">National</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text45"
+       x="146.84286"
+       y="15.033472"
+       style="stroke-width:0.264583">Executive</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text46"
+       x="167.86322"
+       y="15.033472"
+       style="stroke-width:0.264583">Database</text>
+    <text
+       font-family="'Arial Black', 'Arial Black_MSFontService', sans-serif"
+       font-weight="900"
+       font-size="3.43958px"
+       id="text47"
+       x="151.78426"
+       y="19.795971"
+       style="stroke-width:0.264583">(NED)</text>
+  </g>
+</svg>
