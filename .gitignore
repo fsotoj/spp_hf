@@ -1,4 +1,16 @@
-.Rproj.user
+# Ignore all Excel files
+*.xlsx
+*.xls
+
+# Ignore the GeoJSON map
+*.geojson
+
+# Ignore the local download cache directory
+data_cache/
+
+# Ignore system files
+.DS_Store
 .Rhistory
 .RData
+.Rproj.user
 .Ruserdata

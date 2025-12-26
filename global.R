@@ -32,24 +32,46 @@ source("about_spp_module.R")
 source("spp_list_module.R")
 
 
-data_info <- read.xlsx("data/dict_new.xlsx") %>% 
-  select(Category= category, Variable = variable, Description = description_for_ui)
-dict <- read.xlsx("data/dict_new.xlsx") %>% filter(scope == "subnational")
+
+# Define the data fetcher
+get_data <- function(file_name) {
+  base_url <- "https://raw.githubusercontent.com/fsotoj/spp-data/main/data/"
+  local_dir <- "data_cache"
+  if (!dir.exists(local_dir)) dir.create(local_dir)
+  
+  local_path <- file.path(local_dir, file_name)
+  
+  # Only download if the file doesn't exist locally in the container
+  if (!file.exists(local_path)) {
+    # URLencode handles spaces and parentheses in filenames
+    target_url <- utils::URLencode(paste0(base_url, file_name))
+    message(paste("Downloading:", file_name))
+    download.file(target_url, destfile = local_path, mode = "wb")
+  }
+  
+  return(local_path)
+}
+
+
+data_info <- read.xlsx(get_data("dict_new.xlsx")) %>% 
+  select(Category = category, Variable = variable, Description = description_for_ui)
+
+dict <- read.xlsx(get_data("dict_new.xlsx")) %>% 
+  filter(scope == "subnational")
 
 sled_names <- dict %>% 
   filter(dataset == "Legislative Elections", viewable_map == 1) %>% pull(variable)
 
 
-NED <- read.xlsx("data/NED (v.0.1).xlsx") %>%
+NED <- read.xlsx(get_data("NED (v.0.1).xlsx")) %>%
   mutate(ideo_party_nat_exe = as.double(ideo_party_nat_exe),
          start_date_head_nat_exe = as.Date(start_date_head_nat_exe - 2, origin = "1900-01-01"),
          end_date_head_nat_exe   = as.Date(end_date_head_nat_exe - 2, origin = "1900-01-01"))
 
-SEED <- read.xlsx("data/SEED SHINY (v.0.1).xlsx")
-SED <- read.xlsx("data/SED (v.0.1).xlsx")
-SLED <- read.xlsx("data/SLED (v.0.1).xlsx")
-CFTDFLD <- read.xlsx("data/CFTDFLD (v.0.1).xlsx")
-SDI <- read.xlsx("data/SDI (v.1).xlsx") 
+SEED <- read.xlsx(get_data("SEED SHINY (v.0.1).xlsx"))
+SED  <- read.xlsx(get_data("SED (v.0.1).xlsx"))
+SLED <- read.xlsx(get_data("SLED (v.0.1).xlsx"))
+SDI  <- read.xlsx(get_data("SDI (v.1).xlsx")) 
 
 cols_to_fill <- c("chamber_sub_leg",as.vector(outer(setdiff(sled_names,c("chamber_sub_leg","concurrent_election_with_nat_sub_leg")), c("_1","_2"), paste0)))
 
@@ -90,11 +112,10 @@ data <- left_join(NED,SED,c("country_name","country_code","year")) %>%
 
 
 
-geom <- st_read("data/geom_simple_maps.geojson")
+geom <- st_read(get_data("geom_simple_maps.geojson"))
 
-
-party_colors <- read.xlsx("data/party_colors.xlsx")
-party_colors_leg  <- read.xlsx("data/party_colors_leg.xlsx")
+party_colors     <- read.xlsx(get_data("party_colors.xlsx"))
+party_colors_leg <- read.xlsx(get_data("party_colors_leg.xlsx"))
 
 
 country_bboxes <- list(
